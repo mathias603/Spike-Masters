@@ -100,3 +100,45 @@ html, body {
   .hud-text[style*="awards-sweep"],
   .hud-text[style*="awards-confetti"] { animation: none; }
 }
+
+
+
+/* The boot card: a dark screen of white text painted by the browser before any
+   module has loaded, so a slow first visit — the players are several megabytes
+   — reads as loading rather than as a page that never changes. It carries its
+   own colours, so it reads the same in light and dark mode, and main.js takes
+   it down once the title scene is running. */
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: #0d1720;
+  color: #f4f5f7;
+  text-align: center;
+}
+
+.boot-inner { max-width: 300px; }
+
+.boot-title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.boot-line {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.boot-hint {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9aa3b2;
+}

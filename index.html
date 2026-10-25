@@ -6,6 +6,17 @@
 <div id="stage"></div>
 <div id="hud"></div>
 
+<!-- The first paint: text the browser shows before a single module has loaded,
+     so a slow first visit reads as loading rather than as a blank page.
+     main.js fills it in and takes it down once the title scene is running. -->
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-title">VolleyBall3D</div>
+    <div class="boot-line">Loading the team…</div>
+    <div class="boot-hint">The first visit downloads the players and the engine — about 10&nbsp;MB — so give it a moment.</div>
+  </div>
+</div>
+
 <!-- Three.js is ESM-only and its addons import the bare specifier "three", so
      the specifier has to be mapped to the vendored build. The map must come
      before any module that uses it. Nothing here reaches off-device: every
