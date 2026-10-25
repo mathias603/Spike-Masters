@@ -1,0 +1,12 @@
+# Milq metadata (conversation history, project settings, roadmap notes, etc.)
+.milq_meta/
+.milq/
+
+# Build artifacts
+*_build/
+
+# macOS
+.DS_Store
+
+# The clean single-commit copy published to GitHub
+release/

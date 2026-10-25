@@ -1,0 +1,7 @@
+{
+  "name": "VolleyBall3D",
+  "version": "0.1.0",
+  "entry": "index.html",
+  "engine": "three 0.185.0",
+  "orientation": "portrait"
+}
