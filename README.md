@@ -1,4 +1,4 @@
-# VolleyBall3D
+# Spike Masters
 
 A beach-volleyball game played with your thumbs: serve, bump, spike, dive and
 block your way through sets, cups, a season ladder and a daily challenge.
